@@ -8,6 +8,8 @@ let names = ['John', 'Jane', 'Peter', 'David', 'Mary']; // Infer to type string[
 let items = [0, 1, null, 'Hi']; // Infer to type (number | string)[]
 
 // Object types (object)
+let employee: object;
+
 let person: {
   name: string;
   age: number;
