@@ -10,7 +10,7 @@ let items = [0, 1, null, 'Hi']; // Infer to type (number | string)[]
 // Object types (object)
 let person: {
   name: string;
-  age: number
+  age: number;
 };
 
 person = {
