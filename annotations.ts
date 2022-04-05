@@ -7,6 +7,12 @@ const active = true; // Infer to type boolean
 let names = ['John', 'Jane', 'Peter', 'David', 'Mary']; // Infer to type string[]
 let items = [0, 1, null, 'Hi']; // Infer to type (number | string)[]
 
+// Tupple: An array with a fixed number of elements whose types are known
+// Optional tupple elements specified with ?
+let bgColor, headerColor: [number, number, number, number?];
+bgColor = [0, 255, 255, 0.5];
+headerColor = [0, 255, 255];
+
 // Object types (object)
 let employee: object;
 
