@@ -26,6 +26,20 @@ person = {
   age: 25
 };
 
+// Enum: (enumerated type) A group of named constant values that are closely related
+enum ApprovalStatus {
+  draft,      // By default can also refer to it by 0
+  submitted,  // By default can also refer to it by 1 and so on
+  approved,
+  rejected
+};
+
+const request =  {
+  id: 1,
+  status: ApprovalStatus.approved,
+  description: 'Please approve this request'
+};
+
 // Object types (function)
 let greeting : (name: string) => string;
 
