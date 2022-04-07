@@ -50,3 +50,8 @@ greeting = function (name: string) {
 function increment(counter: number) : number {
   return counter++;
 }
+
+// void type: When a function doesn't return a value
+function log(message): void {
+  console.log(message);
+}
