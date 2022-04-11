@@ -3,6 +3,13 @@ let counter: number;
 let firstName = 'John'; // Infer to type string
 const active = true; // Infer to type boolean
 
+// string literal types and type alias
+type acceptedMouseEvents = 'click' | 'dblclick' | 'mouseup' | 'mousedown';
+let mouseEvent: acceptedMouseEvents;
+mouseEvent = 'click'; // valid
+mouseEvent = 'mousedown'; // valid
+mouseEvent = 'mouseover'; // compiler error
+
 // Object types (array)
 let names = ['John', 'Jane', 'Peter', 'David', 'Mary']; // Infer to type string[]
 let items = [0, 1, null, 'Hi']; // Infer to type (number | string)[]
