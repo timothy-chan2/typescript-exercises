@@ -55,3 +55,9 @@ function increment(counter: number) : number {
 function log(message): void {
   console.log(message);
 }
+
+// never type contains no value and you do not need to write out its type
+// Used when a function always throws an error or contains an indefinite loop
+let neverOccur = () => {
+  throw new Error('Never!');
+}
