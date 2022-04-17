@@ -10,12 +10,14 @@ class Person {
     this.birthDate = birthDate;
   }
 
+  // A method
   getFullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 }
 
 let person = new Person('153-07-3130', 'John', 'Doe', new Date(1990, 12, 25));
+console.log(person.getFullName());
 
 // Getter and setter
 class anotherPerson {
